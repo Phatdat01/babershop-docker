@@ -1,13 +1,13 @@
 version: "3.8"
 
 services:
-  wig_stick:
+  babershop:
     build: .
-    container_name: wig_stick
+    container_name: babershop
     ports:
       - "5000:5000"
     volumes:
-      - ./wig_stick:/app
+      - ./babershop:/app
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
